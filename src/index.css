@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, .65);
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans- serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile-card {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin: 16px;
+  width: 346px;
+  height: 400px;
+}
+
+.img-container {
+  background-color: #f5f5f5;
+  width: 346px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  margin-left: 70px;
+}
+
+
+.profile-details {
+  margin-left: 20px;
+}
+
+.profile-name {
+  color: rgba(0, 0, 0, .85);
+  font-weight: 500;
+}
+
+.details-box {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+}
+
+.details-box.phone {
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 47px;
+}
+
+.details-box.web {
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 87px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 0;
+  padding-top: 38px;
+  list-style: none;
+  background: #fafafa;
+  position: relative;
+  bottom: 94px;
+
+}
+
+
+
+.icons::before,
+.icons::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  background: #ccc;
+  top: 24%;
+}
+
+.icons::before {
+  left: 110px;
+}
+
+.icons::after {
+  left: 230px;
+  /* Change the left value as per your requirement */
+}
+
+.icon {
+
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: -25px;
+}
+
+/* Modal styles (adjust as needed) */
+.modal {
+  position: fixed;
+  top: 50%;
+  width: 480px;
+  height: 450px;
+  border-radius: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.full-width {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.cancel {
+  border-radius: 4px;
+  color: rgba(0, 0, 0, .65);
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+.save {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .045);
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.required:before {
+  padding: 5px;
+  content: "*";
+  color: red;
+}
+
+
+.input-field {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.close-btn {
+  background-color: none;
+}
+
+
+button {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Errors */
+
+.error {
+  color: red;
+  font-size: 14px;
+  position: relative;
+  bottom: 19px;
+  left: 147px;
+}
+.error-input {
+  border: 1px solid red;
+  margin: 0;
+}
+
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 80%;
+    /* Adjust the width based on your design */
+  }
+
+  /* Add more specific styling for smaller screens if needed */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .modal {
+    width: 80%;
+    /* Adjust the width based on your design */
+    /* Add more specific styling for smaller screens if needed */
+  }
+}
