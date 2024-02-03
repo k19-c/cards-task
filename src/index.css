@@ -235,10 +235,7 @@ button {
 
   .profile-card {
     width: 89%;
-    /* Adjust the width based on your design */
   }
-
-  /* Add more specific styling for smaller screens if needed */
 }
 
 
@@ -246,7 +243,5 @@ button {
 @media (max-width: 600px) {
   .modal {
     width: 80%;
-    /* Adjust the width based on your design */
-    /* Add more specific styling for smaller screens if needed */
   }
 }

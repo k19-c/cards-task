@@ -7,8 +7,6 @@ const App = () => {
 
   const [profiles, setProfiles]=useState(Profiles);
 
-  // Function to handle profile deletion
-
   const handleDelete=(profileId) => {
     const updatedProfiles=profiles.filter((profile) => profile.id!==profileId);
     setProfiles(updatedProfiles);
